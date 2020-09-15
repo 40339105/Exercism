@@ -6,7 +6,7 @@ def convert(number):
         converted_string += "Plang"
     if number % 7 == 0:
         converted_string += "Plong"
-    if len(converted_string) > 0:
-        return converted_string
-    return str(number)
+    if len(converted_string) < 1:
+        converted_string = str(number)
+    return converted_string
 
